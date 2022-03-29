@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+ <html>
+      <head>
+           	<title>Dropdown Navbar</title> 	
+               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+               <link rel="stylesheet" type="text/css" href="styles.css"> 
+               
+<style>
+	
+    .carousel-caption{
+        font-family: monospace;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 45px;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    
+    }
+    
+    img{
+        transition: 0.3s;
+        opacity: 1;
+        cursor: pointer;
+        padding-bottom: 18px;
+        filter: grayscale(0);
+        transition: 0.3s ease-in-out;
+    }
+    .fulldiv{
+        transition: 0.5s ease-in-out;
+    }
+    
+    .col-md-4 .fulldiv:hover{
+        display: block;	
+        opacity: 0.9;
+        border-radius: 5px;
+        filter: grayscale(100%);
+        transform: scale(1.04);
+        transform: translateY(-10px);
+        box-shadow: 2px 4px 18px #666666;
+    
+    }
+    
+    .col-md-4:hover .carousel-caption{
+        opacity: 1;
+    }
+    .wrapper
+{
+      background: url("./hexa7.jpg") no-repeat;
+      background-size: cover;
+      height: 100vh;
+
+}
+.wrapper .pra /*center*/
+{
+     position: absolute;
+     top: 50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     font-family: sans-serif;
+     user-select: none;
+}
+.pra h1{
+    color:darkcyan;
+    font-size: 70px;
+    font-weight: bold;
+    width:900px;
+    text-align: center;
+
+}
+.pra h2{
+    color:darkgoldenrod;
+    font-size: 70px;
+    font-weight: bold;
+    padding-left: 40px;
+    width:855px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.pra .button
+{
+    margin:65px 280px;
+
+}
+.button button{
+    height:70px;
+    width:250px;
+    font-size:18px;
+    font-weight: bold;
+    margin-left:50px;
+    
+    background-color: white;
+    color: black;
+    border:1px solid black  ;
+    outline:none;
+    cursor:pointer;
+    border-radius:25px;
+    transition: .5s;
+
+}
+.button button:hover
+{
+    background: blue;
+}
+
+
+    
+    </style>
+    
+            </head> 
+            <body id="home"> 
+              
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                         <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                                  <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span> 
+                                   <span class="icon-bar"></span> 
+                                </button> <a class="navbar-brand" href="#">HEXAWARE TECHNOLOGIES</a> 
+                            </div> <div class="collapse navbar-collapse" id="myNavbar"> 
+                                <ul class="nav navbar-nav">
+                                     <li ><a href="#" id="home">Home</a></li>
+                                      <li id="course" class="dropdown" ><a href="#">Section<span class="caret"></span></a> 
+                                        <ul class="dropdown-menu"> 
+                                            <li><a href="#">SEO</a></li>
+                                             <li><a href="#">A.I</a></li>
+                                              <li><a href="#">M.L</a></li> 
+                                              <li><a href="#">Graphics</a></li>
+                                               <li id="sub-dropdown" class="dropdown">
+                                                   <a href="#">web Design<span style="margin-left: 43px;" class="glyphicon glyphicon-chevron-right"></span> </a>
+                                                    <ul id="sub-dropdown-menu" class="dropdown-menu"> 
+                                                        <li><a href="#">FRONTEND DEVELOPER</a></li>
+                                                         <li><a href="#">BACKEND DEVELOPER</a></li> 
+                                                         <li><a href="#">FULLSTACK  DEVELOPER</a></li> 
+                                                       
+                                                         </ul>
+                                                         </li> 
+                                                        </li>
+                                                     </ul> 
+                                                    </li> 
+                                                    <li><a href="#photos">Gallery</a></li>
+                                                   
+                                                      <li><a href="#about">About us</a></li>
+                                                      <li><a href="#meet">Contact us</a></li>
+                                                     </ul> 
+                                                    </div>
+                                                 </div> 
+                                                </nav>
+                                                <div class="wrapper">
+     
+                                                    <div class="pra">
+                                                        <h1>Welcome to our Hexaware  </h1>
+                                                        <h2>We have something new</h2>
+                                                        <div class="button">
+                                                            <button>See more</button>
+                                                           
+                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <h1 id="pr"> OUR VISION</h1>
+                                                <P style="text-indent:30px;"><b>We ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.We ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.We ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.vWe ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.We ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.We ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.We ensure customer satisfaction by adding value and honouring commitments at all times. We are committed to building shareholder value and maintaining high standards of corporate governance. We strive to be an eco-friendly organisation, inculcating good corporate citizenship.</b></P>
+          
+                                                <h2 id="photos">COMPANY PHOTOS</h2>
+                                                
+                                                <!-- <figure>
+                                                    <img src="hexa2.png" title="hexaware technologies">
+                                                    <img src="hexa1.png" title="hexaware technologies">
+                                                    <img src="hexa3.png" title="hexaware technologies">
+                                                    <img src="hexa4.png" title="hexaware technologies" style="margin-left: 50px;">
+                                                
+                                                
+                                                </figure> -->
+                                                <div class="col-md-4 col-sm-6">
+                                                    <div class="fulldiv">
+                                                        <img src="hexa1.png" width="100%" height="270px">
+                                                       
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <div class="col-md-4 col-sm-6">
+                                                    <div class="fulldiv">
+                                                        <img src="hexa2.png" width="100%" height="270px">
+                                                        
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    <div class="col-md-4 col-sm-6">
+                                                    <div class="fulldiv">
+                                                        <img src="hexa3.png" width="100%" height="270px">
+                                                       
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    <div class="col-md-4 col-sm-6">
+                                                    <div class="fulldiv">
+                                                        <img src="hexa4.png" width="100%" height="270px">
+                                                        
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    <div class="col-md-4 col-sm-6">
+                                                    <div class="fulldiv">
+                                                        <img src="hexa5.jpg" width="100%" height="270px">
+                                                      
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="col-md-4 col-sm-6">
+                                                    <div class="fulldiv">
+                                                        <img src="hexa6.png" width="100%" height="270px">
+                                                       
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    </div>
+                                                    
+                                                        
+                                                    </div>
+                                                    
+                                                <!-- <h2 id="about">ABOUT</h2>
+ <p>We welcome you to be a part of our journey
+    As the fastest growing organization of today, Hexaware gives you great growth prospects, opportunity to work along with brilliant minds and a diverse range of high profile clients, as well as an ideal work-life balance.
+    
+    Become part of a rewarding journey of human-machine collaboration, using a combination of human creativity & intellect, data and powerful algorithms. Work on transformation projects at some of the biggest and most respected global companies while being part of a positive, passionate and fun filled work culture.
+    
+    
+</p>
+
+<p>
+    We are 30+, yet we think like a startup in going the extra mile for the client. Open to ideas and innovation, our agile teams focus on customer-centric solutions in an environment made for learning and growth. We carry our cool demeanor with ease and this reflects in everything, from our brand identity to our actions.
+</p>
+<p>Our engagements have always been about redefining and re-imagining the overall customer experience to fast-track business transformation. We have a head start in embracing digital disruption for growth. While traditional players fear adopting automation lest they cannibalize their own revenues, we have treaded the bold path and constantly delivered results</p>
+ <h2 id="meet">Contact us</h2> -->
+
+<!-- <p><a href="mailto:hexaware@gmail.com">Contact us</a></p>
+
+<p><a href="#home">back to home</a></p>                                           -->
+<footer class="bg-light text-dark pt-5 pb-4">	
+
+    <div class="container text-center text-md-left">
+
+        <div class="row text-center text-md-left">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info" id="about">About Us</h5>
+                    <hr class="mb-4">
+                <p style="text-align:justify;"> We are 30+, yet we think like a startup in going the extra mile for the client. Open to ideas and innovation, our agile teams focus on customer-centric solutions in an environment made for learning and growth. We carry our cool demeanor with ease and this reflects in everything, from our brand identity to our actions.</p>
+                
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Let Us Help</h5>
+                    <hr class="mb-4">
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> Your Account</a>
+            </p>
+            <!-- <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> Your Orders</a>
+            </p> -->
+            <!-- <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> Manage Your Content and Devices</a>
+            </p> -->
+            <!-- <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> Help</a>
+            </p> -->
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> Achievements  </a>
+            </p>
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;">Employee Details</a>
+            </p>
+
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">PROJECTS</h5>
+                    <hr class="mb-4">
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> FINACIAL GROWTH</a>
+            </p>
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> ADVERTISE OF THE COMPANY</a>
+            </p>
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;">BECOME AN AFFLICATES</a>
+            </p>
+            <p>
+                <a href="#" class="text-dark" style="text-decoration: none;"> SELF-PUBLISH</a>
+            </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info"  id="meet">Contact</h5>
+                    <hr class="mb-4">
+                <p>
+                    <i class="fas fa-home mr-3"></i>NA HQ: North American Metro 101,<br>Suite 600, 101 Wood Avenue<br>
+                    South,Iselin,New jersy-08830,USA
+                </p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i>marketing@hexaware.com
+                </p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i>+12 3456789
+                </p>
+                <p>
+                    <i class="fas fa-print	 mr-3"></i>+12 3456789
+                </p>
+            </div>
+            
+        </div>
+
+        <hr class="mb-4">
+        <div class=" row d-flex justify-content-center">
+                <div>
+                    <p>	Copyright ©2020 All rights reserved by:
+                        <a href="#" style="text-decoration: none;">
+                            <strong class="text-info">The Hexaware</strong>
+                        </a>
+                    </p>
+                </div>
+        </div>
+            <div class="row d-flex justify-content-center">
+                <div class="text-center ">
+
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark" ><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class= "text-dark" ><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class=" text-dark" ><i class="fab fa-google-plus"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class=" text-dark" ><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class=" text-dark" ><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <p><a href="#home" style=" background:transparent ; text-decoration:none; font-weight:bold; border:10px solid black; border-radius: 5px;"><span style="padding:10px 0;">back to home</a></p> 
+        </span>
+    </div>
+   
+</footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+                                              </html>
